@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="27.416661">
+<testcase classname="API Testing" name="Get location" time="5.373348">
+<system-out><![CDATA[Given The api are up and running for "https://my-json-server.typicode.com"..passed
+When I perform a get request to "/typicode/demo/posts/1"....................passed
+And I perform the request...................................................passed
+Then The response code should be 200........................................passed
+And I should see Json response with a pairs on a filters....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="Login the web app testing" time="12.497698">
+<system-out><![CDATA[Given Launch to the web app testing.........................................passed
+When I input to email textbox with variable data "admin@test123"............passed
+And I input to password textbox with variable data "test123"................passed
+And I click to Login button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter feature" name="Verify filter with single criterion" time="2.385942">
+<failure message="java.lang.AssertionError: did not expect to find [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:97)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:969)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:43)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:53)&#13;&#10;&#9;at common.AbstractTest.verifyPassed(AbstractTest.java:57)&#13;&#10;&#9;at common.AbstractTest.verifyTrue(AbstractTest.java:71)&#13;&#10;&#9;at stepDefinitions.FilterStudentSteps.i_see_the_result_list_filters_all_Status_is(FilterStudentSteps.java:41)&#13;&#10;&#9;at ✽.Then I see the result list filters all Status is &quot;Inactive&quot;(TCs_Student_Filters.feature:13)&#13;&#10;"><![CDATA[Given I'm still in Student page with User Name is "[Admin]".................passed
+When I click to Filter button...............................................passed
+When I select Request Status is "Inactive"..................................passed
+When I click to Apply button................................................passed
+Then I see the result list filters all Status is "Inactive".................failed
+
+StackTrace:
+java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at common.AbstractTest.verifyPassed(AbstractTest.java:57)
+	at common.AbstractTest.verifyTrue(AbstractTest.java:71)
+	at stepDefinitions.FilterStudentSteps.i_see_the_result_list_filters_all_Status_is(FilterStudentSteps.java:41)
+	at ✽.Then I see the result list filters all Status is "Inactive"(TCs_Student_Filters.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Sort feature" name="Verify the First Name column sort properly" time="7.159673">
+<system-out><![CDATA[When I click to sort icon in the First Name header..........................passed
+Then The result grid will be sort descending................................passed
+When I click to sort icon in the First Name header one time.................passed
+Then The result grid will be sort ascending.................................passed
+]]></system-out>
+</testcase>
+</testsuite>

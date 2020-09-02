@@ -1,0 +1,9 @@
+pages\StudentPage.class
+common\AbstractTest.class
+interfaces\LoginPageUI.class
+pages\LoginPage.class
+pages\FactoryPage.class
+interfaces\StudentPageUI.class
+common\AbstractPage.class
+common\AbstractPage$1.class
+common\TestNGAppender.class
