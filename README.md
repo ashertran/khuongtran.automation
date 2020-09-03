@@ -9,7 +9,7 @@ This is a script to run some test case by automation
 
 •	Tool: Selenium Webdriver + Cucumber + TestNG
 
-•	Framework: POM - Page Object Model, TestNG, keyword framework
+•	Framework: POM - Page Object Model, TestNG , BDD
 
 •	Object Management: Maven
 
@@ -22,6 +22,9 @@ This is a script to run some test case by automation
 5.	Open IntelliJ / Eclip
 6.	Import project (pom.xml)
 7.	Run script by .bat file on terminal tab
-8.	Check report >> Report on target folder
+8.	Check report >> Report on target folder >> site folder
+
+    To view the report by cucumber-JMV - Report : target >> report.html
 
 
+*Thanks for a wonderful opportunity that I have been given. I have tried my best to delivery it on time and I am looking forward to hearing from you for any further discussion to share my testing experience and knowledge.
