@@ -1,4 +1,3 @@
-# khuongtran.automation
 # Author : Khuong Tran
 
 This is a script to run some test case by automation
