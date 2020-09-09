@@ -14,10 +14,13 @@ This is a script to run some test case by automation
 
 •	Programming language: Java 8
 
+==> Required : Just run on Chrome Browser
+
 #Setup
 1.	Get this link : https://github.com/ashertran/khuongtran.automation.git
 2.	Download the script >> go to a specific folder >> past zip folder >> unzip folder
 3.	Open cmd to run command line: mvn clean verify
+4. Run "runAutoScriptbyChrome.bat" >> enter
 
 
 *Thanks for a wonderful opportunity that I have been given. I have tried my best to delivery it on time and I am looking forward to hearing from you for any further discussion to share my testing experience and knowledge.
