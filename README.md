@@ -14,7 +14,7 @@ This is a script to run some test case by automation
 
 •	Programming language: Java 8
 
-==> Required : Just run on Chrome Browser
+==> Required : Just run on Windown + Chrome Browser
 
 #Setup
 1.	Get this link : https://github.com/ashertran/khuongtran.automation.git
